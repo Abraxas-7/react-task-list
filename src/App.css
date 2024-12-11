@@ -11,13 +11,43 @@ body {
   background-color: #f1f1f1;
 }
 
+h4 {
+  display: inline-block;
+}
+
 li {
   list-style: none;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 p {
   padding: 4px 0;
+}
+
+hr {
+  margin: 25px 0;
+}
+
+/* PILS */
+.pill {
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  color: white;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+li.backlog .pill {
+  background-color: red;
+}
+
+li.in_progress .pill {
+  background-color: orange;
+}
+
+li.completed .pill {
+  background-color: lime;
 }
 
 /* DOC */

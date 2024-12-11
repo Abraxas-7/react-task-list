@@ -21,8 +21,9 @@ function App() {
 
           <ul>
             {tasksUndone.map((task) => (
-              <li>
+              <li className={task.state}>
                 <h4>{task.title}</h4>
+                <span className="pill">{task.state}</span>
                 <p>Priority: {task.priority}</p>
                 <p>Estimated Time: {task.estimatedTime}</p>
               </li>
@@ -37,8 +38,9 @@ function App() {
 
           <ul>
             {tasksDone.map((task) => (
-              <li>
+              <li className={task.state}>
                 <h4>{task.title}</h4>
+                <span className="pill">{task.state}</span>
                 <p>Priority: {task.priority}</p>
                 <p>Estimated Time: {task.estimatedTime}</p>
               </li>
